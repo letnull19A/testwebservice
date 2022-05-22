@@ -1,0 +1,26 @@
+:root {
+    --card-standart-width: 17rem;
+}
+
+.card-standart-width {
+    width: var(--card-standart-width)!important;
+}
+
+.card img.image {
+    width: calc(17rem - 2px);
+    height: 190px;
+}
+
+.card .card-text {
+    height: 80px;
+}
+
+.card {
+    padding: 0;
+}
+
+footer.footer {
+    width: 100%;
+    height: auto;
+    padding: 30px 0 30px 0;
+}
