@@ -19,6 +19,15 @@
     padding: 0;
 }
 
+ul.list {
+
+}
+
+ul.list li.list-item {
+    list-style: none;
+    margin-top: 20px;
+}
+
 footer.footer {
     width: 100%;
     height: auto;
