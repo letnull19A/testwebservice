@@ -8,9 +8,16 @@
     <title>Стартовая страница</title>
     <link rel="stylesheet" type="text/css" href="./include/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./include/fontawesome/css/all.min.css">
+    <link rel='stylesheet' type="text/css" href='./include/calendar-20/fullcalendar/packages/core/main.css'>
+    <link rel='stylesheet' type="text/css" href='./include/calendar-20/fullcalendar/packages/daygrid/main.css'>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script type="text/javascript" src="./include/bootstrap/js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="./include/fontawesome/js/all.min.js"></script>
+    <script type="text/javascript" src="./include/calendar-20/fontawesome/js/all.min.js"></script>
+    <script type="text/javascript" src='./include/calendar-20/fullcalendar/packages/core/main.js'></script>
+    <script type="text/javascript" src='./include/calendar-20/fullcalendar/packages/interaction/main.js'></script>
+    <script type="text/javascript" src='./include/calendar-20/fullcalendar/packages/daygrid/main.js'></script>
+    <script type="text/javascript" src='./include/calendar-20/fullcalendar/packages/timegrid/main.js'></script>
+    <script type="text/javascript" src='./include/calendar-20/fullcalendar/packages/list/main.js'></script>
     <script type="text/javascript" src="./js/script.js"></script>
 </head>
 
@@ -153,14 +160,15 @@
                                 <th scope="row">31 Мая 10:00</th>
                                 <td>
                                     <p class="align-top">
-                                        Выставка творческих работ учащихся ДХШ «Краски лета» в рамках проекта «Четыре сезона»
+                                        Выставка творческих работ учащихся ДХШ «Краски лета» в рамках проекта «Четыре
+                                        сезона»
                                     </p>
                                     <a href="#" class="align-text-bottom">Подробнее</a>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">
-                                    15 Мая 10:00<br/>
+                                    15 Мая 10:00<br />
                                     01 Мая 10:00
                                 </th>
                                 <td>
@@ -172,6 +180,28 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                <h2>Календарь событий</h2>
+                <div class="row">
+                    <div class="mt-4" id='calendar'></div>
+                </div>
+                <h2>Напишите письмо</h2>
+                <div class="row">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Представьтесь*</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Введите Ф. И. О.">
+                            <label for="exampleInputEmail1">E-Mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Введите email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Сообщение</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Отправить</button>
+                    </form>
                 </div>
             </div>
         </div>
