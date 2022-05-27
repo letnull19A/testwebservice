@@ -45,3 +45,12 @@ footer.footer {
 .image-docs-large {
     width: 48rem;
 }
+
+.image-scale-small {
+    width: 100%;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+}
